@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>mock</title>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZBNXL4KSW"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				window.dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-FZBNXL4KSW');
+			function getQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return unescape(r[2]);
+				return null;
+			}
+			if(getQueryString("type") == "loans"){
+				gtag('event', 'checkout-mock', {
+					'method': 'checkout'
+				});
+			}else if(getQueryString("type") == "mark-money"){
+				gtag('event', 'checkout-mock', {
+					'method': 'checkout'
+				});
+			}else {
+				gtag('event', 'checkout-mock', {
+					'method': 'checkout'
+				});
+			}
+			function downPoint() {
+				if(getQueryString("type") == "loans"){
+					gtag('event', 'email-loans-download', {
+						'method': 'markmoney'
+					});
+				}else if(getQueryString("type") == "mark-money"){
+					gtag('event', 'email-mark-money-download', {
+						'method': 'markmoney'
+					});
+				}else {
+					gtag('event', 'lipper-download', {
+						'method': 'markmoney'
+					});
+				}
+			}
+		</script>
+		<style>
+			.list-header {
+				text-transform: uppercase;
+				font-size: 1rem;
+				margin-top: 0;
+				margin-bottom: 1px;
+				color: #4A4A4A
+			}
+
+			.ptext {
+				padding-bottom: 2px;
+				font-size: 0.75rem;
+				margin-top: 0;
+				color: #4A4A4A;
+				word-break: break-all;
+			}
+			
+
+
+			@media screen and (max-width: 600px) {
+				.list-header {
+					text-transform: uppercase;
+					font-size: 0.5rem;
+					margin-top: 0;
+					margin-bottom: 1px;
+					color: #4A4A4A
+				}
+
+				.ptext {
+					padding-bottom: 2px;
+					font-size: 0.4375rem;
+					margin-top: 0;
+					color: #4A4A4A;
+					word-break: break-all;
+				}
+			}
+
+			@media screen and (max-width: 300px) {
+				.remove-flex-mobile {
+					display: block !important;
+				}
+
+				.display-grid-mobile {
+					grid-template-columns: 1fr !important;
+				}
+
+				.reminders-list {
+					padding-left: 15px !important;
+					margin-top: 10px !important;
+				}
+
+				.reminders-table td {
+					float: unset !important;
+					display: block !important;
+					width: unset !important;
+					margin-left: 0 !important;
+				}
+
+				.second-item-order {
+					flex-direction: column !important;
+					align-items: flex-start !important;
+				}
+
+				.flex-order {
+					order: 2 !important;
+				}
+
+				.list-header {
+					padding-top: 20px !important;
+				}
+
+				.navigation-footer {
+					text-align: center !important;
+				}
+
+				.navigation-footer li {
+					display: list-item !important;
+					padding: 10px 0 !important;
+				}
+
+				.social-media img {
+					width: 30px !important;
+				}
+
+				.social-media a {
+					padding: 0 3px 0 0 !important;
+				}
+
+				.social-media a:last-of-type {
+					padding-right: 0 !important;
+				}
+			}
+		</style>
+	</head>
+	<body style="margin:0;">
+		
+		<table style="border: none; margin: 0 auto ; padding: 0;">
+			<tr>
+				<td style="padding: 0; background-color: #FFFFFF;">
+
+					<div
+						style="max-width: 600px; min-width: 200px; font-family: 'Arial', sans-serif; font-size: 16px; background-color: #FFFFFF; line-height: 1.4; color: #4A4A4A; border: 1px solid #DFDFDF; border-radius: 10px; overflow: hidden;">
+
+						<div style="padding: 0 20px; margin-top: 20px;"
+							onclick="download()">
+							<!-- onclick="window.location.href='https://lipperlab.com/'"> -->
+							<img src="https://sit.lipperfly.com/img/banner.png" alt="email hero image"
+								style="display: block; background-size: cover; width: 100%;">
+						</div>
+						
+						<!-- <button onclick="test()"> test </button> -->
+
+						<ul style="padding: 0 20px; margin-top: 1.875rem;">
+							<li style="list-style-type: none; padding-bottom: 50px; margin-left: 0;">
+								<div class="remove-flex-mobile" style="display:flex; justify-content:space-between;">
+									<div style="flex-basis: 90%;" class="remove-flex-basis-mobile" >
+										<img src="https://sit.lipperfly.com/img/iphone1.png" alt=""
+											style="display: block; width: 100%;">
+									</div>
+									<div style="flex-basis: 100%; padding-left: 20px;" class="remove-flex-basis-mobile">
+										<h3 class="list-header">Pinjaman online kapan saja</h3>
+										<p class="ptext">
+											Kami memberikan pinjaman online berkualitas. Cukup unduh aplikasinya dan
+											seluruh proses pinjaman online dapat diselesaikan dimana saja dan kapan saja
+											hanya melalui handphone Anda.
+										</p>
+										<h3 class="list-header">Pinjaman tanpa agunan</h3>
+										<p class="ptext">
+											Kami menggunakan aplikasi pinjaman tanpa agunan yang cepat dan fleksible
+											untuk memenuhi kebutuhan finansial Anda
+										</p>
+										<h3 class="list-header">Pinjaman kredit</h3>
+										<p class="ptext">
+											Pinjaman online dapat dibayar dengan cara mencicil atau dengan satu kali
+											pembayaran
+										</p>
+										<h3 class="list-header">Tingkat keamanan yang tinggi</h3>
+										<p class="ptext">
+											Kami melindungi semua informasi terutama informasi pelanggan. Kami tidak
+											akan membagikannya kepada siapapun tanpa persetujuan dari Anda dan pemberi
+											pinjaman
+										</p>
+										<a href="https://lipperlab.com/"
+											style="padding-bottom: 2px; font-size: 0.625rem; margin-top: 0; color: #3775c3;">Learn
+											more > ></a>
+									</div>
+								</div>
+							</li>
+
+							<li style="list-style-type: none; padding-bottom: 50px; margin-left: 0;">
+								<div class="remove-flex-mobile" style="display:flex;">
+									<div style="flex-basis: 100%; padding-right: 20px; width: 100%;"
+										class="remove-flex-basis-mobile">
+										<h3 class="list-header">Hadiah harian</h3>
+										<p class="ptext">
+											Anda bisa mendapatkan koin dengan absen setiap hari! Anda juga bisa
+											mendapatkan lebih banyak koin dengan mengajak teman untuk bergabung dengan
+											kami.
+										</p>
+										<h3 class="list-header">Dapatkan uang tunai</h3>
+										<p class="ptext">
+											Koin emas dapat di tarik menjadi uang tunai, dapatkan Rp 40.000 sekarang!
+											Anda bisa mendapatkan Rp 40.000 hanya dengan memainkan beberapa game. Sangat
+											mudah!
+										</p>
+										<h3 class="list-header">Game terpopuler gratis</h3>
+										<p class="ptext">
+											Kami memilih game terpopuler terbaik sehingga Anda dapat menikmati serunya
+											permainan!
+										</p>
+										<a href="https://lipperlab.com/"
+											style="padding-bottom: 2px; font-size: 0.625rem; margin-top: 0; color: #3775c3;">Learn
+											more > ></a>
+									</div>
+									<div style="flex-basis: 90%;" class="remove-flex-basis-mobile">
+										<img src="https://sit.lipperfly.com/img/iphone2.png" alt=""
+											style="display: block; width: 100%;">
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div style="text-align: center; margin-bottom: 0.625rem;">
+							<img style="max-width: 6.0625rem;" src="https://sit.lipperfly.com/img/tb.png">
+						</div>
+						<div style="background-color: #19c07a; padding: 2px; text-align: center;height: 3.75rem;">
+							<h5 style="color: #9D9D9D; text-align: center;">Lipperfly is a free application for Google play</h5>
+						</div>
+
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+		      <tr>
+		        <td align="center" valign="top">
+		          <table border="0" cellpadding="20" cellspacing="0" width="100%">
+		            <tr>
+		              <td align="center" valign="top" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+		                <p>
+		                    <a href="{$unsubscribe_link}" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-decoration: underline;">Unsubscribe</a>
+		                </p>
+		              </td>
+		            </tr>
+		          </table>
+		        </td>
+		      </tr>
+		    </table>
+	</body>
+</html>
